@@ -2,7 +2,7 @@
 
 从零实现的自动求导引擎 + 多层感知机，纯 Python 编写，**仅依赖 `math` 库**。
 
-对标 PyTorch 的 `Tensor` / `autograd` / `nn.Module`，所有梯度计算均通过 `demo.py` 与 PyTorch 逐项对比验证。
+对标 PyTorch 的 `Tensor` / `autograd` / `nn.Module`，所有梯度计算均通过 `test.py` 与 PyTorch 逐项对比验证。
 
 ## 安装
 
@@ -21,7 +21,7 @@ micrograd/
   __init__.py        # 对外暴露 Value, Module, Neuron, Layer, MLP, Linear
   engine.py          # Value 类 — 自动求导引擎
   nn.py              # Module / Neuron / Layer / MLP / Linear — 神经网络模块
-demo.py              # 7 组测试，每项与 PyTorch 对照
+test.py              # 7 组测试，每项与 PyTorch 对照
 pyproject.toml       # pip 安装配置
 ```
 
@@ -141,7 +141,7 @@ class Linear(nin, nout)
 ## 测试
 
 ```bash
-python demo.py
+python test.py
 ```
 
 7 组测试，**每个测试用相同数值同时跑 micrograd 和 PyTorch，逐项对比**：
