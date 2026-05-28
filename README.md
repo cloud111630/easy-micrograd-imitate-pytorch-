@@ -11,7 +11,7 @@
 pip install -e .
 
 # 或直接从 GitHub 安装
-pip install git+https://github.com/cloud111630/micrograd.git
+pip install git+https://github.com/cloud111630/easy-micrograd-imitate-pytorch-.git
 ```
 
 ## 项目结构

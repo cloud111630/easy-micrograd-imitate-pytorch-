@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/cloud111630/micrograd"
+Repository = "https://github.com/cloud111630/easy-micrograd-imitate-pytorch-"
 
 [tool.setuptools.packages.find]
 include = ["micrograd*"]
